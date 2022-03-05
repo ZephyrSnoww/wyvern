@@ -10,9 +10,56 @@
     justify-content: center;
 }
 
-.homepage-title {
+/* .homepage-title {
     font-size: 50px;
-    font-family: Evanescent;
+    font-family: Denibas;
     text-align: center;
-    color: var(--pink);
+    color: var(--purple);
+} */
+
+.homepage-content-container {
+    height: 100%;
+    width: 75%;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.homepage-titlebar {
+    position: sticky;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1;
+}
+
+.homepage-titlebar-logo {
+    width: 50px;
+    transform: scale(6);
+    object-position: 10px 6px;
+}
+
+.homepage-titlebar-items {
+    display: flex;
+    gap: 20px;
+    font-family: OdinsSpear;
+    padding: 0px 20px;
+}
+
+.homepage-titlebar-item {
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+    transition: color .25s ease-out;
+}
+
+.homepage-titlebar-item:hover {
+    color: var(--purple);
+}
+
+.homepage-content {
+    z-index: 10;
 }
