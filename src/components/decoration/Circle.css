@@ -1,0 +1,22 @@
+.circle {
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+}
+
+@keyframes circle-scaling {
+    0% {
+        transform: scale(0.75);
+        border: 1px solid var(--dark-purple);
+    }
+
+    50% {
+        transform: scale(1.1);
+        border: 1px solid var(--foreground-color);
+    }
+
+    100% {
+        transform: scale(0.75);
+        border: 1px solid var(--dark-purple);
+    }
+}

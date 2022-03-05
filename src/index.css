@@ -1,0 +1,61 @@
+/* ========== Basic boilerplate stuff ========== */
+/* ===== Root variables ===== */
+:root {
+    /* Set variables here */
+    --background-color: #1f0514;
+    --foreground-color: #fee6ff;
+
+    --dark-purple: #841899;
+    --purple: #aa8ac7;
+    --pink: #fc03a5;
+
+    --accent: #1085d4;
+}
+
+/* ===== Fonts ===== */
+@font-face {
+    font-family: BreatheFire;
+    src: url("./assets/fonts/Breathe\ Fire.otf");
+}
+
+@font-face {
+    font-family: Denibas;
+    src: url("./assets/fonts/Denibas\ sunset.ttf");
+}
+
+@font-face {
+    font-family: Evanescent;
+    src: url("./assets/fonts/evanescent_p.ttf");
+}
+
+@font-face {
+    font-family: Geek;
+    src: url("./assets/fonts/geek.ttf");
+}
+
+@font-face {
+    font-family: OdinsSpear;
+    src: url("./assets/fonts/odins\ spear.TTF");
+}
+
+@font-face {
+    font-family: Centurion;
+    src: url("./assets/fonts/The\ Centurion\ .ttf");
+}
+
+@font-face {
+    font-family: Tisk;
+    src: url("./assets/fonts/Tisk.ttf");
+}
+
+/* ========== Actual CSS ========== */
+body {
+    margin: 0;
+
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Geek;
+    font-size: 30px;
+}
