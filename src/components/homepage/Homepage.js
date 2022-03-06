@@ -528,10 +528,10 @@ function Homepage(props) {
                     <div className="homepage-section-break" />
                     <div className="homepage-section">
                         <div className="homepage-section-header">
-                            {">What Wyvern is"}
+                            {">About Us"}
                         </div>
                         <div className="homepage-section-text">
-                            Wyvern is a chat client built on the <a href="https://matrix.org">Matrix</a> backend. It's a hobby project made by <a href="https://sophie-snow.carrd.co">Sophie Snow</a>, and is really just a reason to make something that looks cool.<br />Also just because every other chat app is kind of annoying.
+                            Wyvern is a chat client built on the <a href="https://matrix.org">Matrix</a> backend. It's a hobby project made by <a href="https://sophie-snow.carrd.co">Sophie Snow</a> (with help from <a href="https://acer-portfolio.vercel.app/">HouseholdDragon</a>), and is really just a reason to make something that looks cool.<br />Also just because every other chat app is kind of annoying.
                         </div>
                     </div>
                     {/* <div className="homepage-section-break" />
