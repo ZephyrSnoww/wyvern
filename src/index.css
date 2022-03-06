@@ -2,50 +2,77 @@
 /* ===== Root variables ===== */
 :root {
     /* Set variables here */
-    --background-color: #1f0514;
-    --foreground-color: #fee6ff;
+    --background-color: rgb(12, 6, 8);
+    --foreground-color: rgb(255, 220, 246);
 
-    --dark-purple: #841899;
-    --purple: #aa8ac7;
-    --pink: #fc03a5;
+    --dark-purple: rgb(132, 21, 98);
 
-    --accent: #1085d4;
+    --color-1: rgb(189, 68, 153);
+    --gradient-1: rgb(205, 68, 152);
+    --gradient-2: rgb(227, 70, 153);
+    --gradient-3: rgb(239, 81, 150);
+    --gradient-4: rgb(241, 100, 133);
+    --color-2: rgb(242, 118, 121);
+}
+
+/* ===== Remove scroll bars ===== */
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* ===== Generic selectors ===== */
+a {
+    background: linear-gradient(90deg, var(--color-1) 0%, var(--color-2) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+
+    transition: 0.25s ease-out;
+}
+
+a:hover {
+    filter: hue-rotate(-90deg);
 }
 
 /* ===== Fonts ===== */
 @font-face {
-    font-family: BreatheFire;
-    src: url("./assets/fonts/Breathe\ Fire.otf");
+    font-family: "Averox";
+    src: url("./assets/fonts/averox.ttf");
 }
 
 @font-face {
-    font-family: Denibas;
-    src: url("./assets/fonts/Denibas\ sunset.ttf");
+    font-family: "Denibas";
+    src: url("./assets/fonts/Denibas.ttf");
 }
 
 @font-face {
-    font-family: Evanescent;
-    src: url("./assets/fonts/evanescent_p.ttf");
+    font-family: "OdinsSpear";
+    src: url("./assets/fonts/odinsspear-webfont.woff");
 }
 
 @font-face {
-    font-family: Geek;
-    src: url("./assets/fonts/geek.ttf");
+    font-family: "FlowBlock";
+    src: url("./assets/fonts/FlowBlock-Regular.ttf");
 }
 
 @font-face {
-    font-family: OdinsSpear;
-    src: url("./assets/fonts/odins\ spear.TTF");
+    font-family: "MajorMono";
+    src: url("./assets/fonts/MajorMonoDisplay-Regular.ttf");
 }
 
 @font-face {
-    font-family: Centurion;
-    src: url("./assets/fonts/The\ Centurion\ .ttf");
+    font-family: "Monsterrat";
+    src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf");
 }
 
 @font-face {
-    font-family: Tisk;
-    src: url("./assets/fonts/Tisk.ttf");
+    font-family: "Redacted";
+    src: url("./assets/fonts/Redacted-Regular.ttf");
 }
 
 /* ========== Actual CSS ========== */
@@ -56,6 +83,25 @@ body {
     color: var(--foreground-color);
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-family: Geek;
+    font-family: Monsterrat;
     font-size: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    user-select: none;
+
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

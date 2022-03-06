@@ -1,20 +1,29 @@
 .square {
     background-color: transparent;
     position: absolute;
+    z-index: -1;
 }
 
 @keyframes square-rotation {
     0% {
         transform: rotate(0deg);
-        border: 1px solid var(--foreground-color);
+        border: var(--width) solid var(--color-1);
+    }
+
+    25% {
+        border: var(--width) solid var(--dark-purple);
     }
 
     50% {
-        border: 1px solid var(--dark-purple);
+        border: var(--width) solid var(--color-2);
+    }
+
+    75% {
+        border: var(--width) solid var(--dark-purple);
     }
 
     100% {
         transform: rotate(360deg);
-        border: 1px solid var(--foreground-color);
+        border: var(--width) solid var(--color-1);
     }
 }
