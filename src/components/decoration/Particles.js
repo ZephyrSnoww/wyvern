@@ -33,7 +33,7 @@ function ParticlesPreset(props) {
                 },
                 "detectRetina": true,
                 "duration": 0,
-                "fpsLimit": 120,
+                "fpsLimit": 60,
                 "interactivity": {
                     "detectsOn": "window",
                     "events": {
@@ -52,7 +52,7 @@ function ParticlesPreset(props) {
                             "mode": "grab",
                             "parallax": {
                                 "enable": true,
-                                "force": 10,
+                                "force": 75,
                                 "smooth": 10
                             }
                         },
@@ -265,7 +265,7 @@ function ParticlesPreset(props) {
                         "distance": 100,
                         "enable": false,
                         "frequency": 1,
-                        "opacity": 0.4,
+                        "opacity": 1,
                         "shadow": {
                             "blur": 5,
                             "color": {
@@ -302,16 +302,16 @@ function ParticlesPreset(props) {
                             "acceleration": 1000,
                             "enable": true,
                             "inverse": true,
-                            "maxSpeed": 5
+                            "maxSpeed": 3
                         },
                         "path": {
                             "clamp": true,
                             "delay": {
                                 "random": {
                                     "enable": true,
-                                    "minimumValue": 0
+                                    "minimumValue": 1
                                 },
-                                "value": 0
+                                "value": 1
                             },
                             "enable": false,
                             "options": {}
@@ -327,13 +327,13 @@ function ParticlesPreset(props) {
                         "size": false,
                         "speed": 1,
                         "spin": {
-                            "acceleration": 1,
+                            "acceleration": 0,
                             "enable": false
                         },
                         "straight": false,
                         "trail": {
-                            "enable": false,
-                            "length": 5,
+                            "enable": true,
+                            "length": 2,
                             "fillColor": {
                                 "value": "#000000"
                             }
@@ -412,16 +412,16 @@ function ParticlesPreset(props) {
                     "rotate": {
                         "random": {
                             "enable": true,
-                            "minimumValue": 100
+                            "minimumValue": 10
                         },
-                        "value": 100,
+                        "value": 50,
                         "animation": {
                             "enable": true,
-                            "speed": 100,
+                            "speed": 10,
                             "sync": false
                         },
-                        "direction": "clockwise",
-                        "path": true
+                        "direction": "random",
+                        "path": false
                     },
                     "shadow": {
                         "blur": 0,
@@ -444,8 +444,8 @@ function ParticlesPreset(props) {
                             "minimumValue": 1
                         },
                         "value": {
-                            "min": 0.1,
-                            "max": 3
+                            "min": 0.01,
+                            "max": 5
                         },
                         "animation": {
                             "count": 0,
@@ -486,9 +486,9 @@ function ParticlesPreset(props) {
                         }
                     },
                     "wobble": {
-                        "distance": 20,
+                        "distance": 10,
                         "enable": true,
-                        "speed": 10
+                        "speed": 5
                     },
                     "zIndex": {
                         "random": {
@@ -496,9 +496,9 @@ function ParticlesPreset(props) {
                             "minimumValue": 0
                         },
                         "value": 0,
-                        "opacityRate": 1,
-                        "sizeRate": 1,
-                        "velocityRate": 1
+                        "opacityRate": 0,
+                        "sizeRate": 2,
+                        "velocityRate": -1
                     }
                 },
                 "pauseOnBlur": true,

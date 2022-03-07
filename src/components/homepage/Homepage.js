@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ParticlesPreset from "../decoration/Particles";
+import TitleBar from "../generic/TitleBar";
 import "./Homepage.css";
 
 function Homepage(props) {
@@ -7,14 +8,7 @@ function Homepage(props) {
         <div className="homepage-container">
             <ParticlesPreset />
             <div className="homepage-content-container">
-                <div className="homepage-titlebar">
-                    <img className="homepage-titlebar-logo" src="/logo.png" alt="Wyvern Logo Text" />
-                    <div className="homepage-titlebar-items">
-                        <Link to="/" className="homepage-titlebar-item">Home</Link>
-                        <Link to="/about" className="homepage-titlebar-item">About</Link>
-                        <Link to="/login" className="homepage-titlebar-item">Log In</Link>
-                    </div>
-                </div>
+                <TitleBar />
                 <div className="homepage-content">
                     <div className="homepage-section homepage-header">
                         <img className="homepage-header-image" src="/logo-image.png" alt="Wyvern Logo" />

@@ -19,40 +19,6 @@
     position: relative;
 }
 
-.homepage-titlebar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    display: flex;
-    box-sizing: border-box;
-
-    background: var(--background-color);
-    background: linear-gradient(90deg, transparent 0%, var(--background-color) 10%, var(--background-color) 90%, transparent 100%);
-
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    z-index: 10;
-}
-
-.homepage-titlebar-logo {
-    width: 200px;
-}
-
-.homepage-titlebar-items {
-    display: flex;
-    gap: 20px;
-    padding: 0px 20px;
-}
-
-.homepage-titlebar-item {
-    box-sizing: border-box;
-    padding: 10px;
-    cursor: pointer;
-    font-weight: 300;
-    font-size: 0.75em;
-}
-
 .homepage-content {
     display: flex;
     flex-direction: column;
