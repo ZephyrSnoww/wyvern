@@ -1,0 +1,24 @@
+.error-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error-title {
+    font-family: MajorMono;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.error-text {
+    font-family: OdinsSpear;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}

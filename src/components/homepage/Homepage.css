@@ -51,11 +51,6 @@
     cursor: pointer;
     font-weight: 300;
     font-size: 0.75em;
-    transition: color .25s ease-out;
-}
-
-.homepage-titlebar-item:hover {
-    color: var(--color-2);
 }
 
 .homepage-content {
