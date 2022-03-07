@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import ParticlesPreset from "../decoration/Particles";
 import TitleBar from "../generic/TitleBar";
 import "./Homepage.css";
