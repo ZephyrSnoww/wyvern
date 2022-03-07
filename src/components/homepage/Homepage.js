@@ -297,14 +297,14 @@ function Homepage(props) {
                                 },
                                 "decay": 0,
                                 "distance": {},
-                                "direction": "none",
+                                "direction": "up",
                                 "drift": 0,
                                 "enable": true,
                                 "gravity": {
-                                    "acceleration": 9.81,
+                                    "acceleration": 1000,
                                     "enable": true,
                                     "inverse": true,
-                                    "maxSpeed": 7
+                                    "maxSpeed": 5
                                 },
                                 "path": {
                                     "clamp": true,
@@ -320,21 +320,21 @@ function Homepage(props) {
                                 },
                                 "outModes": {
                                     "default": "out",
-                                    "bottom": "out",
+                                    "bottom": "in",
                                     "left": "out",
                                     "right": "out",
                                     "top": "out"
                                 },
                                 "random": true,
                                 "size": false,
-                                "speed": 6,
+                                "speed": 1,
                                 "spin": {
                                     "acceleration": 1,
                                     "enable": false
                                 },
                                 "straight": false,
                                 "trail": {
-                                    "enable": true,
+                                    "enable": false,
                                     "length": 5,
                                     "fillColor": {
                                         "value": "#000000"
@@ -350,17 +350,17 @@ function Homepage(props) {
                                     "factor": 1000
                                 },
                                 "limit": 0,
-                                "value": 150
+                                "value": 100
                             },
                             "opacity": {
                                 "random": {
-                                    "enable": true,
+                                    "enable": false,
                                     "minimumValue": 0.1
                                 },
-                                "value": 0.5,
+                                "value": 1,
                                 "animation": {
                                     "count": 10,
-                                    "enable": true,
+                                    "enable": false,
                                     "speed": 2,
                                     "sync": false,
                                     "destroy": "none",
@@ -438,7 +438,7 @@ function Homepage(props) {
                             },
                             "shape": {
                                 "options": {},
-                                "type": "circle"
+                                "type": "square"
                             },
                             "size": {
                                 "random": {
@@ -468,12 +468,12 @@ function Homepage(props) {
                                 },
                                 "value": 0,
                                 "animation": {
-                                    "enable": true,
+                                    "enable": false,
                                     "speed": 10,
                                     "sync": false
                                 },
                                 "direction": "clockwise",
-                                "enable": true
+                                "enable": false
                             },
                             "twinkle": {
                                 "lines": {
@@ -482,13 +482,13 @@ function Homepage(props) {
                                     "opacity": 1
                                 },
                                 "particles": {
-                                    "enable": false,
+                                    "enable": true,
                                     "frequency": 0.05,
                                     "opacity": 1
                                 }
                             },
                             "wobble": {
-                                "distance": 50,
+                                "distance": 20,
                                 "enable": true,
                                 "speed": 10
                             },
