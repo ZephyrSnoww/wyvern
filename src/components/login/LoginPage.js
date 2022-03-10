@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ParticlesPreset from "../decoration/Particles";
 import './LoginPage.css';
 
@@ -61,6 +62,8 @@ class LoginPage extends React.Component {
             <div className="login-page">
                 <ParticlesPreset />
                 <form className="login-form" onSubmit={(e) => this.handleFormSubmit(e)}>
+                    <Link to="/" className="login-back-button">{"< Back"}</Link>
+
                     <div className="alert-text" style={{
                         opacity: this.state.alertTextEnabled ? 1 : 0
                     }}>{this.state.alertText}</div>
