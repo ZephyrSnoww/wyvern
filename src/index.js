@@ -5,12 +5,12 @@ import AppContainer from './AppContainer';
 import './index.css';
 
 ReactDOM.render(
-    <BrowserRouter>
-        <AppContainer />
-    </BrowserRouter>,
-    document.getElementById('root')
+  <BrowserRouter>
+    <AppContainer />
+  </BrowserRouter>,
+  document.getElementById('root')
 );
 
-window.addEventListener("load", () => {
-    document.body.style.animation = "fade-in 2s ease-out 1 forwards";
+window.addEventListener('load', () => {
+  document.body.style.animation = 'fade-in 2s ease-out 1 forwards';
 });
